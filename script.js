@@ -20,3 +20,16 @@ let books = [[1, "Start with why", "Simon Sinek", 80.0, 13],
             //display books
             console.log(books);
 
+
+            //query of a book 
+            for(let book of books){
+                console.log(book);
+            }
+
+            let title = "Zero to One";
+
+            if(title == "Zero to One"){
+                console.log("On Stock")
+            }else{
+                console.log("Out of Stock")
+            }
