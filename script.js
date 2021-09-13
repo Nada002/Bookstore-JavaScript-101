@@ -6,9 +6,10 @@ let books = [[1, "Start with why", "Simon Sinek", 80.0, 13],
              [5, "You don't know JS", "Kyle Simpson", 39.9, 9]
              ];
 
-             //add a new book
-             books[5] = [6, "Refactoring", "Martin Fowler", 66.5, 30];
-             console.log(books[5]);
+
+            //add a new book
+            books[5] = [6, "Refactoring", "Martin Fowler", 32, 30];
+            console.log(books[5]);
 
              //edit a book
             books[1][4] = 19;
@@ -22,14 +23,17 @@ let books = [[1, "Start with why", "Simon Sinek", 80.0, 13],
 
 
             //query of a book 
-            for(let book of books){
-                console.log(book);
-            }
+            /* 
+            we can query of a book through: Book Id , Title or Author
+            so here in the code I used title of a book
+            */
+            for(let i = 0; i < books.length; i++){
+                console.log(books[i]);
 
-            let title = "Zero to One";
-
-            if(title == "Zero to One"){
-                console.log("On Stock")
-            }else{
-                console.log("Out of Stock")
+                if(books[i].includes("J. Clark Scott")){
+                    console.log(true);
+                }
+                else{
+                    console.log(false);
+                }
             }
